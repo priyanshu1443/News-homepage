@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    font-family: 'Inter', 'sans-serif';
+    ;
+}
+
+body {
+    background-color: hsl(36, 100%, 99%);
+}
+
+nav,
+#center,
+#bottom {
+    width: 75%;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+    nav,
+    #center,
+    #bottom {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    nav,
+    #center,
+    #bottom {
+        width: 100%;
+    }
+}
+
+/* ********* main container *********** */
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* *********** navigation **********  */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 50px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+@media (min-width: 577px) {
+    nav #menulogo {
+        display: none;
+    }
+
+    #center #d1 #dekstop {
+        width: 600px;
+    }
+
+    #center #d1 #mob {
+        display: none;
+    }
+
+    #bottom img {
+        width: 113px;
+        height: 120px;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        gap: 50px;
+        visibility: visible;
+    }
+
+    nav #close {
+        display: none;
+    }
+}
+
+/* ************ center part ************* */
+#center {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+/* ************** center part 1 ************* */
+
+#center #d1 #d11 {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#center #d1 #d11 h1 {
+    font-weight: 800;
+}
+
+#center #d1 #d11 div p {
+    width: 350px;
+    color: hsl(236, 13%, 42%);
+    padding: 10px;
+    font-weight: 400;
+}
+
+#center #d1 #d11 div button {
+    margin-left: 10px;
+    /* margin-bottom: 10px; */
+    width: 150px;
+    height: 35px;
+    border: none;
+    color: white;
+    background-color: hsl(5, 85%, 63%);
+    letter-spacing: 2.5px;
+}
+
+#center #d1 #d11 div button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+/* ************* center part 2 ******************* */
+#center #d2 {
+    background-color: hsl(240, 100%, 5%);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#center #d2 h1 {
+    font-weight: 700;
+    color: hsl(35, 77%, 62%);
+    padding-bottom: 8px;
+
+}
+
+#center #d2 p {
+    font-size: none;
+    font-weight: 400;
+    color: hsl(233, 8%, 79%);
+    padding-bottom: 8px;
+}
+
+#center #d2 h5 {
+    padding-top: 8px;
+    font-weight: 700;
+    color: hsl(36, 100%, 99%);
+    cursor: pointer;
+}
+
+#center #d2 h5:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+#center #d2 hr {
+    background: hsl(233, 8%, 79%);
+    height: 2px;
+    margin: 8px 0px 8px 0px;
+}
+
+/* *********** bottom ************ */
+#bottom {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#bottom .card {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background-color: hsl(36, 100%, 99%);
+}
+
+#bottom h3 {
+    font-weight: 700;
+    color: hsl(233, 8%, 79%);
+}
+
+#bottom h6 {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#bottom h6:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+#bottom p {
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
+}
+
+@media (max-width:576px) {
+
+    nav,
+    #center,
+    #bottom {
+        position: relative;
+        top: 400px;
+    }
+
+    #center #d1 img {
+        width: 450px;
+    }
+}
+
+@media (max-width:499px) {
+
+    nav,
+    #center,
+    #bottom {
+        position: relative;
+        top: 370px;
+    }
+
+    #center #d1 img {
+        width: 360px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 576px) {
+
+    nav #menulogo {
+        visibility: visible;
+    }
+
+    nav div {
+        position: fixed;
+        right: 1px;
+        top: 0px;
+        background-color: white;
+        z-index: 15;
+        width: 290px;
+        height: 100%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        position: relative;
+        top: 20%;
+        font-weight: 700;
+        color: hsl(240, 100%, 5%);
+    }
+
+    nav ul li {
+        margin-top: 30px;
+    }
+
+    nav #close {
+        position: fixed;
+        top: 50px;
+        right: 10px;
+    }
+
+    #closeit{
+        visibility: hidden;
+    }
+
+    #center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #center #d1 {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    #center #d1 #dekstop {
+        display: none;
+    }
+
+    #center #d1 #d11 {
+        flex-direction: column;
+    }
+
+    #center #d1 #d11 {
+        gap: 0px;
+    }
+}
+@media (min-width: 375px) and (max-width: 991px){
+
+    #center #d2 {
+        align-items: center;
+    }
+
+    #bottom {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    #bottom .card {
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #bottom img {
+        width: 94px;
+        height: 120px;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 768px){
+    nav,
+    #center,
+    #bottom {
+        position: relative;
+        top: 300px;
+        width: 100%;
+    }
+    
+    #center {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav #menulogo {
+        display: none;
+    }
+
+    #center #d1 #dekstop {
+        width: 500px;
+    }
+
+    #center #d1 #mob {
+        display: none;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        gap: 25px;
+        visibility: visible;
+    }
+    
+    nav #close {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px){
+    nav,
+    #center,
+    #bottom {
+        position: relative;
+        top: 100px;
+        width: 100%;
+    }
+    nav ul {
+        gap: 30px;
+    }
+    #center {
+        gap: 20px;
+    }
+    #center #d1 #dekstop {
+        width: 400px;
+    }
+
+    #center #d1 #d11 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .attribution{
+        visibility: hidden;
+    }
+}
