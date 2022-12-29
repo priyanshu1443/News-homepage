@@ -385,4 +385,12 @@ nav ul li:hover {
     .attribution{
         visibility: hidden;
     }
+    /* ************** new add ************** */
+    #bottom {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #bottom .card{
+        flex-basis: 45%;
+    }
 }
